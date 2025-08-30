@@ -25,9 +25,8 @@ export default function RootLayout({
         </style>
       </head>
       <body
-        className={`antialiased max-w-svw overflow-hidden`}
+        className={`antialiased max-w-svw min-h-dvh overflow-x-hidden`}
       >
-        <Banner />
         <Header />
         {children}
       </body>

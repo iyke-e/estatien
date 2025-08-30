@@ -11,6 +11,8 @@
   --color-gray-80: #141414;
   --color-purple-60: #703bf7;
   --color-gray-15: #262626;
+  --color-gray-10: #1a1a1a;
+  --color-grey-60: #999999;
 }
 
 body {
@@ -20,6 +22,15 @@ body {
 }
 
 @layer base {
+  h1 {
+    @apply text-[28px] font-semibold md:text-[46px];
+  }
+  h2 {
+    @apply text-[26px] font-semibold md:text-[38px];
+  }
+  p {
+    @apply text-grey-60 text-sm md:text-base;
+  }
 }
 
 @layer components {
@@ -35,6 +46,9 @@ body {
 @utility flex-between {
   @apply flex justify-between items-center;
 }
+@utility flex-normal {
+  @apply flex justify-start items-center;
+}
 
 @utility absolute-center {
   @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2;
@@ -48,5 +62,5 @@ body {
   height: calc(--value(integer) * 4);
 }
 @utility p-inline {
-  @apply px-4 md:px-20;
+  @apply px-4 md:px-12;
 }

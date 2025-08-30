@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useState } from "react";
 
 export type NavProps = {
     name: string;
@@ -11,7 +10,6 @@ export interface DesktopNavProp {
 }
 
 const DesktopNav = ({ navlinks }: DesktopNavProp) => {
-    // Slice the first 4 links directly
     const nav = navlinks.slice(0, 4);
 
     return (
