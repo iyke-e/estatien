@@ -58,8 +58,8 @@ body {
 }
 
 @utility square-* {
-  width: calc(--value(integer) * 4);
-  height: calc(--value(integer) * 4);
+  width: calc(--value(integer) * 4px);
+  height: calc(--value(integer) * 4px);
 }
 @utility p-inline {
   @apply px-4 md:px-12;

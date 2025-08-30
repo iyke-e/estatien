@@ -39,9 +39,9 @@ const Banner: React.FC<BannerProps> = ({ onClose }) => {
             </p>
             <button
                 onClick={handleClose}
-                className="bg-white/10 rounded-full square-40 grid-center xs:absolute xs:right-8 xs:top-1/2 xs:-translate-y-1/2"
+                className="bg-white/10 rounded-full square-7 grid-center xs:absolute xs:right-8 xs:top-1/2 xs:-translate-y-1/2"
             >
-                <FaXmark className="square-20" />
+                <FaXmark className="square-5" />
             </button>
         </div>
     )

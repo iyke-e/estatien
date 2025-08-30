@@ -2,6 +2,7 @@ import Button from '@/components/ui/Button'
 import Link from 'next/link'
 import React from 'react'
 import heroimg from "@/assets/heroimg.png"
+import QuickCards from './QuickCards'
 
 
 
@@ -21,7 +22,7 @@ const HeroCard = ({ metric, subtext, k }: heroCardProps) => {
 }
 
 const Hero = () => {
-    return (
+    return (<>
         <div className=' grid items-center gap-12 mt-16 md:gap-0 xs:grid-cols-[5fr_4.5fr]'>
             <div className='p-inline order-2'>
                 <h1 className='mb-4 sm:mb-5'>Discover Your Dream <br /> Property with Estatein</h1>
@@ -49,6 +50,9 @@ const Hero = () => {
             </div>
             <div style={{ backgroundImage: `url(${heroimg.src})` }} className='bg-filled md:order-2 mx-4 md:mx-0 h-[302px] mt-10 md:mt-0  md:h-[600px]'></div>
         </div>
+        <QuickCards />
+    </>
+
     )
 }
 
