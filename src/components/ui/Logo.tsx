@@ -1,3 +1,5 @@
+
+"use client"
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import logo from '@/assets/logo.svg';
@@ -14,7 +16,7 @@ const Logo = ({ logoSize = 28, textSize = 16 }: LogoProp) => {
         setMounted(true);
     }, []);
 
-    if (!mounted) return null; // wait until client mount
+    if (!mounted) return null;
 
     return (
         <div className="w-fit gap-2 flex items-center">
@@ -25,7 +27,7 @@ const Logo = ({ logoSize = 28, textSize = 16 }: LogoProp) => {
                 alt="logo icon"
                 style={{ width: logoSize, height: logoSize }}
             />
-            <p style={{ fontSize: textSize, fontWeight: 600 }}>Estatein</p>
+            <p className='text-white' style={{ fontSize: textSize, fontWeight: 600 }}>Estatein</p>
         </div>
     );
 };

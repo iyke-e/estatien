@@ -8,7 +8,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button = ({ children, className, btntype = "primary" }: ButtonProps) => {
     return (
-        <button className={` rounded-lg px-5 py-3 cursor-pointer 
+        <button className={`text-sm rounded-lg px-5 py-3 cursor-pointer 
         ${btntype === "black" ? "bg-gray-80 border border-gray-15" :
                 btntype === "outline" ? "border" :
                     "bg-purple-60"} ${className}
