@@ -1,4 +1,4 @@
-import Cta from "@/components/pages/home/Cta";
+import Cta from "@/components/pages/shared/Cta";
 import Faq from "@/components/pages/home/faq/Faq";
 import FeaturedProperty from "@/components/pages/home/featuredproperty/FeaturedProperty";
 import Hero from "@/components/pages/home/hero/Hero";

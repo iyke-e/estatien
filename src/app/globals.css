@@ -68,3 +68,7 @@ body {
 @utility p-inline {
   @apply px-4 md:px-12;
 }
+
+@utility cardshadow {
+  @apply shadow-[0_0_14px_rgba(255,255,255,0.2)];
+}
