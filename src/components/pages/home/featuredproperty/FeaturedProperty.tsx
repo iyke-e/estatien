@@ -7,7 +7,6 @@ import Section from "../../shared/Section";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import type { Swiper as SwiperType } from "swiper";
 
 const featuredProperty = [
   {
