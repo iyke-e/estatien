@@ -114,8 +114,8 @@ const FeaturedProperty = () => {
           }}
           breakpoints={{
             0: { slidesPerView: 1 },
-            520: { slidesPerView: 2 },
-            780: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            1200: { slidesPerView: 3 },
           }}
         >
           {featuredProperty.map((item, index) => (

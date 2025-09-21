@@ -6,7 +6,7 @@ import React from 'react'
 const Cta = () => {
 
     return (
-        <div className={`p-inline xs:flex-between border-y bg-filled sm:bg-bottom  bg-[linear-gradient(to_right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/mobilecta.svg)] sm:bg-[linear-gradient(to_right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/desktopcta.svg)]  border-gray-10 py-12 mt-10`}>
+        <div className={`p-inline xs:flex-between items-start gap-20 border-y bg-filled sm:bg-bottom  bg-[linear-gradient(to_right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/mobilecta.svg)] sm:bg-[linear-gradient(to_right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/desktopcta.svg)]  border-gray-10 py-12 mt-10`}>
 
             <div>
                 <h2 className='max-w-80 xs:max-w-none mb-3'>Start Your Real Estate Journey Today</h2>

@@ -32,7 +32,7 @@ const TeamCard = ({ bgImg, name, role }: TeamCardProp) => (
     <div>
       <button
         className={
-          "flex mt-6 justify-between px-6 py-4 w-full border border-gray-15 rounded-full items-center"
+          "flex mt-6 justify-between px-3 py-2 w-full border border-gray-15 rounded-full items-center"
         }
       >
         <span>Say Hello 👋 </span>
@@ -56,7 +56,7 @@ const Team = () => {
         description="At Estatein, our success is driven by the dedication and expertise of our team. Get to know the people behind our mission to make your real estate dreams a reality."
       />
 
-      <div className="flex gap-4 mt-12 items-center">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 ">
         <TeamCard name="Max Mitchell" role="Founder" bgImg={max.src} />
         <TeamCard
           name="Sarah Johnson"

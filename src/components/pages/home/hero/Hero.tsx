@@ -23,8 +23,8 @@ const HeroCard = ({ metric, subtext, k }: heroCardProps) => {
 
 const Hero = () => {
     return (<>
-        <div className=' grid items-center gap-12 mt-16 md:gap-0 xs:grid-cols-[5fr_4.5fr]'>
-            <div className='p-inline order-2'>
+        <div className=' grid items-center gap-12  lg:gap-0 lg:grid-cols-[5fr_4.5fr]'>
+            <div className='p-inline md:mt-12 lg:mt-0 order-2'>
                 <h1 className='mb-4 sm:mb-5'>Discover Your Dream <br /> Property with Estatein</h1>
                 <p className='mb-10 xs:mb-12.5'>Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
                 <div className='grid mb-10 xs:mb-12.5 xs:flex-normal gap-4'>

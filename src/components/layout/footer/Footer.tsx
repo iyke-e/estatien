@@ -14,7 +14,7 @@ import FooterDesktop from './FooterDesktop';
 const Footer = () => {
     return (
         <>
-            <div className=' pt-20 md:hidden '>
+            <div className=' pt-20 lg:hidden '>
                 <div>
                     <div className='grid p-inline gap-4'>
                         <Logo />

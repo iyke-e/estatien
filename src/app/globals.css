@@ -24,7 +24,7 @@ body {
 
 @layer base {
   h1 {
-    @apply text-[28px] font-semibold md:text-[46px];
+    @apply text-[28px] font-semibold sm:text-[46px];
   }
   h2 {
     @apply text-[26px] font-semibold md:text-[38px];

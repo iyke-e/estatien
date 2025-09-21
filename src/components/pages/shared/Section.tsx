@@ -26,7 +26,7 @@ const Section = ({
 }: SectionProp) => {
   return (
     <div>
-      <div className="flex items-end justify-between">
+      <div className="flex items-end  justify-between gap-20">
         <div className="max-w-[975px]">
           <Image src={sectionstar} alt="section star" />
           <h2 className="mb-2">{sectionTitle}</h2>
@@ -34,7 +34,7 @@ const Section = ({
         </div>
 
         {cta && (
-          <div className="hidden xs:block">
+          <div className="hidden md:block">
             <Link href={"/"}>
               <Button btntype="black">{cta}</Button>
             </Link>
@@ -44,13 +44,13 @@ const Section = ({
 
       <div className="my-10">{children}</div>
 
-      <div className="border-t border-gray-15 py-4 flex-between xs:block">
-        <Link className="xs:hidden" href={"/"}>
+      <div className="border-t border-gray-15 py-4 flex-between md:block">
+        <Link className="md:hidden" href={"/"}>
           <Button btntype="black">{cta}</Button>
         </Link>
 
         <div className="flex-between">
-          <div className="hidden xs:block">
+          <div className="hidden md:block">
             {String(currentIndex).padStart(2, "0")} of{" "}
             {String(totalSlides).padStart(2, "0")}
           </div>
@@ -66,7 +66,7 @@ const Section = ({
               <GoArrowLeft />
             </div>
 
-            <div className="xs:hidden">
+            <div className="md:hidden">
               {String(currentIndex).padStart(2, "0")} of {totalSlides}
             </div>
 

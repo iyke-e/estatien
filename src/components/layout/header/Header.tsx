@@ -29,80 +29,26 @@ const Header = () => {
     const bannerRef = useRef<HTMLDivElement | null>(null);
     const width = useWindowWidth();
 
-    const widthCheck = width >= 540;
+    const widthCheck = width >= 768;
 
     const handleMenuToggle = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // 🔑 Measure banner height and set CSS variable
-    useEffect(() => {
-        const updateBannerHeight = () => {
-            const bannerHeight = showBanner && bannerRef.current
-                ? bannerRef.current.offsetHeight
-                : 0;
-            document.documentElement.style.setProperty(
-                "--banner-height",
-                `${bannerHeight}px`
-            );
-        };
-
-        updateBannerHeight();
-        window.addEventListener("resize", updateBannerHeight);
-
-        return () => {
-            window.removeEventListener("resize", updateBannerHeight);
-        };
-    }, [showBanner]);
-
-    // 🔑 GSAP hide/show on scroll
-    useEffect(() => {
-        if (!hasMounted) return;
-
-        let lastScroll = 0;
-
-        const trigger = ScrollTrigger.create({
-            start: 0,
-            end: "max",
-            onUpdate: (self) => {
-                const currentScroll = self.scroll();
-
-                if (!isMenuOpen) {
-                    if (currentScroll > lastScroll) {
-                        gsap.to(".nav-bar", {
-                            y: -100,
-                            duration: 0.3,
-                            ease: "power2.out",
-                        });
-                    } else {
-                        gsap.to(".nav-bar", {
-                            y: 0,
-                            duration: 0.3,
-                            ease: "power2.out",
-                        });
-                    }
-                }
-
-                lastScroll = currentScroll;
-            },
-        });
-
-        return () => trigger.kill();
-    }, [isMenuOpen, hasMounted]);
+ 
+    
 
     return (
         <>
-            {/* Banner always visible unless closed */}
             {showBanner && (
                 <div ref={bannerRef}>
                     <Banner onClose={() => setShowBanner(false)} />
                 </div>
             )}
 
-            {/* Nav that animates on scroll */}
             <header
-                className="nav-bar fixed top-0 left-0 w-screen z-50"
-                style={{ marginTop: "var(--banner-height)" }}
+                className="nav-bar top-0 left-0 w-screen z-50"
+                
             >
                 {hasMounted && (
                     <div className="p-inline bg-gray-10 xs:relative py-4 flex-between">

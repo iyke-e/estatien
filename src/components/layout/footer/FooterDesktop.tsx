@@ -10,7 +10,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 const FooterDesktop = () => {
     return (
         <div>
-            <div className=' pt-20 hidden md:block '>
+            <div className=' pt-20 hidden lg:block '>
                 <div className='flex p-inline justify-between  items-start'>
                     <div className='grid  gap-4'>
                         <Logo />

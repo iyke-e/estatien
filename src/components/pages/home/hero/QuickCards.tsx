@@ -25,7 +25,7 @@ const Card = ({ imgurl, description, linkUrl }: CardProp) => {
 
 const QuickCards = () => {
     return (
-        <div className='grid gap-2.5 p-inline grid-cols-2 mt-10 md:mt-4  xs:grid-cols-3 lg:grid-cols-4'>
+        <div className='grid gap-2.5 p-inline grid-cols-2 mt-10 md:mt-8 lg:mt-4  lg:grid-cols-4'>
             <Card description='Find Your Dream Home' linkUrl='/' imgurl={dreamhome} />
             <Card description='Unlock Property Value' linkUrl='/' imgurl={propertyvalue} />
             <Card description='Efforless Property Management' linkUrl='/' imgurl={property} />

@@ -9,7 +9,7 @@ import SectionHeader from "@/components/ui/SectionHeader";
 
 const Values = () => {
   return (
-    <div className="grid gap-12 md:grid-cols-[4fr_5fr] items-center p-inline mt-24">
+    <div className="grid gap-12 lg:grid-cols-[4fr_5fr] items-center p-inline mt-16">
       <SectionHeader
         sectionTitle="Our Values"
         description={`Our values form the foundation of everything we do. Built on trust, we foster lasting relationships with our clients and partners. We are committed to delivering excellence in every project, ensuring that quality and attention to detail define our work. By staying client-centric, we listen, understand, and design solutions that truly meet unique needs. And through unwavering commitment, we go the extra mile to turn goals into lasting success.`}

@@ -8,8 +8,8 @@ type NavigatingCardProp = {
 
 const NavigatingCard = ({ step, title, subtext }: NavigatingCardProp) => {
   return (
-    <div>
-      <div className="border-l border-[#703BF7] p-4">
+    <div className={"flex-[1_1_320px]"}>
+      <div className="border-l  border-[#703BF7] p-4">
         <h5>Step {String(step).padStart(2, "0")}</h5>
       </div>
       <div className=" bg-gradient-to-br from-[#703BF7] via-[#262626] to-[#262626] p-[1px] !rounded-r-xl !rounded-bl-xl">
@@ -30,7 +30,7 @@ const Navigating = () => {
         description="At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works."
       />
 
-      <div className="grid grid-cols-3 mt-12 gap-8">
+      <div className="flex flex-wrap mt-12 gap-8">
         <NavigatingCard
           step={1}
           title="Discover a World of possibilities"
