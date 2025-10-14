@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
 import "./globals.css";
-
-const urbanistSan = Urbanist({
-  variable: "--font-urbanist-sans",
-  subsets: ["latin"],
-});
-
+import Header from "@/components/layout/header/Header";
+import Footer from "@/components/layout/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Estatein",
   description: "An estate management website",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({
@@ -20,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${urbanistSan.variable}  antialiased`}
-      >
+      <body className={`antialiased max-w-svw min-h-dvh overflow-x-hidden`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

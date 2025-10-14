@@ -1,0 +1,30 @@
+feat => used when i want to add a new functionality 
+e.g feat(auth): add login with Google
+
+note: all action should be in the present 
+
+
+fix => use when you fix something broken like a bug or ui fix
+e.g fix(navbar): correct mobile menu toggle issue
+
+docs: this is used when updating the README, or contributing to guide etc.
+e.g docs: update README with project setup instructions
+
+style => Code styling/formatting without logic change. use this for formatting whitespaces, css tweaks etc
+e.g style(button): update padding for mobile view
+
+refactor: Restructure code (not a new feature, not a bug fix), used when improving code readability, structure, or organization
+e.g refactor: move component into /component directory 
+
+
+chore: Maintenace, tooling, config, build scripts
+e.g chore: add eslint and prettier formatting 
+
+perf => preformance improvement
+e.g perf(api): optimize database query for user list
+
+ci => continous integration / Deployment
+e.g ci: add github actions workflow for testing
+
+test => Adding or updating test
+e.g test(auth): add unit test for login function
