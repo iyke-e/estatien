@@ -1,5 +1,4 @@
 import Image from "next/image";
-import sectionstar from "@/assets/sectionstar.svg";
 import CardWrapper from "@/components/ui/CardWrapper";
 import trust from "@/assets/trust.svg";
 import excellence from "@/assets/excellence.svg";

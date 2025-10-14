@@ -1,8 +1,9 @@
 @import "tailwindcss";
 @import "keen-slider/keen-slider.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --black: #000000;
+  --black: #141414;
   --white: #ffffff;
 }
 
@@ -14,6 +15,7 @@
   --color-gray-15: #262626;
   --color-gray-10: #1a1a1a;
   --color-grey-60: #999999;
+  --color-bg: #141414;
 }
 
 body {

@@ -1,8 +1,6 @@
 "use client";
-import SectionHeader from "@/components/ui/SectionHeader";
 
 import React, { useRef, useState } from "react";
-import seasideimg from "@/assets/seasideimg.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
@@ -12,6 +10,7 @@ import CardWrapper from "@/components/ui/CardWrapper";
 import Image from "next/image";
 import domainicon from "@/assets/domain.svg";
 import categoryicon from "@/assets/category.svg";
+import { Swiper as SwiperType } from "swiper";
 const clientsTetimony = [
   {
     year: 2019,
@@ -124,7 +123,7 @@ const ClientsCard = ({
 };
 
 const Clients = () => {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   const [currentIndex, setCurrentIndex] = useState(1);
   const totalSlides = clientsTetimony.length;
 

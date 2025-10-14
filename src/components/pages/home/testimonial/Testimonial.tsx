@@ -5,6 +5,8 @@ import wade from "@/assets/wadepics.png";
 import emile from "@/assets/emelie.png";
 import Section from "../../shared/Section";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
+
 import { Autoplay } from "swiper/modules";
 const testimonies = [
   {
@@ -117,7 +119,7 @@ const testimonies = [
   },
 ];
 const Testimonial = () => {
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   const [currentIndex, setCurrentIndex] = useState(1);
   const totalSlides = testimonies.length;
 

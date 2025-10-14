@@ -14,9 +14,9 @@ const Achievement = () => {
         <CardWrapper className="grid flex-[1_1_300px] gap-4 p-6 cardshadow">
           <h4 className="text-xl mb-3">3+ Years of Excellence</h4>
           <p>
-            With over 3 years in the industry, we've amassed a wealth of
+            {` With over 3 years in the industry, we've amassed a wealth of
             knowledge and experience, becoming a go-to resource for all things
-            real estate.
+            real estate.`}
           </p>
         </CardWrapper>
         <CardWrapper className="grid flex-[1_1_300px] gap-4 p-6 cardshadow">
@@ -29,8 +29,8 @@ const Achievement = () => {
         <CardWrapper className="grid flex-[1_1_300px] gap-4 p-6 cardshadow">
           <h4>Industry Recognition</h4>
           <p>
-            We've earned the respect of our peers and industry leaders, with
-            accolades and awards that reflect our commitment to excellence.
+            {`   We've earned the respect of our peers and industry leaders, with
+            accolades and awards that reflect our commitment to excellence.`}
           </p>
         </CardWrapper>
       </div>

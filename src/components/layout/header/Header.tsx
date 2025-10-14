@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, {  useRef, useState } from "react";
 import Logo from "../../ui/Logo";
 import { HiMenuAlt3 } from "react-icons/hi";
 import useWindowWidth from "@/hooks/useWindowWidth";

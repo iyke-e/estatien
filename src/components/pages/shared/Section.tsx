@@ -4,13 +4,14 @@ import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import type { Swiper as SwiperType } from "swiper";
 
 type SectionProp = {
   sectionTitle?: string;
   description?: string;
   cta?: string;
   children: ReactNode;
-  swiperRef?: any;
+  swiperRef?: React.RefObject<SwiperType | null>;
   currentIndex?: number;
   totalSlides?: number;
 };
@@ -59,8 +60,8 @@ const Section = ({
             <div
               className="bg-gray-15 square-8 grid-center rounded-full cursor-pointer"
               onClick={() => {
-                swiperRef?.current?.slidePrev(),
-                  console.log(swiperRef.current.slidePrev());
+                swiperRef?.current?.slidePrev();
+                console.log(swiperRef?.current?.slidePrev());
               }}
             >
               <GoArrowLeft />
