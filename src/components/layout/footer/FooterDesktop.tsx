@@ -29,7 +29,7 @@ const FooterDesktop = () => {
             </div>
           </div>
           <ul className="grid  gap-3">
-            <li className="mb-4 text-grey-60">Home</li>
+            <li className="mb-4 text-gray-60">Home</li>
 
             <li>
               <a href="#hero">Hero</a>
@@ -48,7 +48,7 @@ const FooterDesktop = () => {
             </li>
           </ul>
           <ul className="grid gap-3">
-            <li className="mb-4 text-grey-60">Properties</li>
+            <li className="mb-4 text-gray-60">Properties</li>
 
             <li>
               <a href="#hero">Portfolio</a>
@@ -58,7 +58,7 @@ const FooterDesktop = () => {
             </li>
           </ul>
           <ul className="grid gap-3">
-            <li className="mb-4 text-grey-60">Contact Us</li>
+            <li className="mb-4 text-gray-60">Contact Us</li>
 
             <li>
               <a href="#hero">Contact Form</a>
@@ -68,7 +68,7 @@ const FooterDesktop = () => {
             </li>
           </ul>
           <ul className="grid pl-6 gap-3">
-            <li className="mb-4 text-grey-60">About Us</li>
+            <li className="mb-4 text-gray-60">About Us</li>
 
             <li>
               <a href="#hero">Our Story</a>
@@ -88,7 +88,7 @@ const FooterDesktop = () => {
           </ul>
 
           <ul className="grid pl-6    gap-3">
-            <li className="mb-4 text-grey-60">Services</li>
+            <li className="mb-4 text-gray-60">Services</li>
 
             <li>
               <a href="#hero">Valuation Mastery</a>

@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 py-8 p-inline mt-10">
             <div className="grid pr-6">
               <ul className="grid  gap-3">
-                <li className="mb-4 text-grey-60">Home</li>
+                <li className="mb-4 text-gray-60">Home</li>
 
                 <li>
                   <a href="#hero">Hero</a>
@@ -53,7 +53,7 @@ const Footer = () => {
               </ul>
 
               <ul className="grid py-6 border-b border-gray-15 gap-3">
-                <li className="mb-4 text-grey-60">Properties</li>
+                <li className="mb-4 text-gray-60">Properties</li>
 
                 <li>
                   <a href="#hero">Portfolio</a>
@@ -64,7 +64,7 @@ const Footer = () => {
               </ul>
 
               <ul className="grid py-6 border-b border-gray-15 gap-3">
-                <li className="mb-4 text-grey-60">Contact Us</li>
+                <li className="mb-4 text-gray-60">Contact Us</li>
 
                 <li>
                   <a href="#hero">Contact Form</a>
@@ -77,7 +77,7 @@ const Footer = () => {
 
             <div className="">
               <ul className="grid pl-6  border-l border-gray-15 gap-3">
-                <li className="mb-4 text-grey-60">About Us</li>
+                <li className="mb-4 text-gray-60">About Us</li>
 
                 <li>
                   <a href="#hero">Our Story</a>
@@ -97,7 +97,7 @@ const Footer = () => {
               </ul>
 
               <ul className="grid pl-6  border-l mt-4 border-gray-15 gap-3">
-                <li className="mb-4 text-grey-60">Services</li>
+                <li className="mb-4 text-gray-60">Services</li>
 
                 <li>
                   <a href="#hero">Valuation Mastery</a>

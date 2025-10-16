@@ -1,6 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @import "keen-slider/keen-slider.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --black: #141414;
@@ -14,7 +14,7 @@
   --color-purple-60: #703bf7;
   --color-gray-15: #262626;
   --color-gray-10: #1a1a1a;
-  --color-grey-60: #999999;
+  --color-gray-60: #999999;
   --color-bg: #141414;
 }
 
@@ -35,7 +35,7 @@ body {
     @apply text-[20px] font-semibold;
   }
   p {
-    @apply text-grey-60 text-sm md:text-base;
+    @apply text-gray-60 text-sm md:text-base;
   }
 }
 
