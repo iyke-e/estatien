@@ -11,6 +11,7 @@ import useHasMounted from "@/hooks/useHasMounted";
 import Banner from "../Banner";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useRouter } from "next/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +29,7 @@ const Header = () => {
   const [showBanner, setShowBanner] = useState(true);
   const bannerRef = useRef<HTMLDivElement | null>(null);
   const width = useWindowWidth();
+  const router = useRouter();
 
   const widthCheck = width >= 768;
 
@@ -56,7 +58,15 @@ const Header = () => {
             {widthCheck ? (
               <>
                 <DestopNav navlinks={navlinks} />
-                <Button btntype="black">Contact Us</Button>
+
+                <Button
+                  onClick={() => {
+                    router.push("/contact");
+                  }}
+                  btntype="black"
+                >
+                  Contact Us
+                </Button>
               </>
             ) : (
               <>

@@ -5,12 +5,13 @@ import ClampText from "@/components/utility/ClampText";
 
 interface FeaturedPropertyCardProps extends HTMLAttributes<HTMLDivElement> {
   imgurl: string;
-  name: string;
+  name: "micheal" | "iyke";
   description: string;
   quote?: string;
   price: number;
   propertyUrl: string;
 }
+
 const PropertyCard = ({
   imgurl,
   name,
