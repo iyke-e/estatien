@@ -1,8 +1,7 @@
 import Button from "@/components/ui/Button";
-import CardWrapper from "@/components/ui/CardWrapper";
+
 import SectionHeader from "@/components/ui/SectionHeader";
 import { BiPhone } from "react-icons/bi";
-import { BsMailbox } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 import { FaLocationPin } from "react-icons/fa6";
 

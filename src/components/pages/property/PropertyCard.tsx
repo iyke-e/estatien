@@ -5,7 +5,7 @@ import ClampText from "@/components/utility/ClampText";
 
 interface FeaturedPropertyCardProps extends HTMLAttributes<HTMLDivElement> {
   imgurl: string;
-  name: "micheal" | "iyke";
+  name: string;
   description: string;
   quote?: string;
   price: number;
